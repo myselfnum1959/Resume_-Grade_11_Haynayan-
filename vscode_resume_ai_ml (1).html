@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Raniel Gravador</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      display: flex;
+      height: 100vh;
+      background-color: #1e1e1e;
+      color: #dcdcdc;
+    }
+    .sidebar {
+      width: 270px;
+      background-color: #252526;
+      border-right: 1px solid #333;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid #3a3d41;
+    }
+    .section {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    .section h2 {
+      font-size: 14px;
+      color: #569cd6;
+      border-bottom: 1px solid #333;
+      margin-bottom: 8px;
+      padding-bottom: 4px;
+    }
+    .section p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #cfcfcf;
+      margin: 4px 0;
+    }
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: #1e1e1e;
+    }
+    .filename {
+      color: #858585;
+      background-color: #2d2d2d;
+      padding: 8px 12px;
+      border-bottom: 1px solid #333;
+      font-size: 13px;
+    }
+    .code {
+      padding: 20px;
+      overflow-y: auto;
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .keyword { color: #c586c0; }
+    .type { color: #4ec9b0; }
+    .string { color: #ce9178; }
+    .comment { color: #6a9955; }
+    .highlight { color: #ffd700; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="Gemini_Generated_Image_h2s6mch2s6mch2s6 (1).png" alt="Profile Picture" class="profile-pic">
+    <div class="section">
+      <h2>Personal Info</h2>
+      <p><strong>Raniel Gravador</strong></p>
+      <p>AI/ML Engineer & Computer Scientist</p>
+      <p>Bulacan, Philippines</p>
+      <p>raniel@example.com</p>
+      <p>github.com/ranielgravador</p>
+      <p>linkedin.com/in/ranielgravador</p>
+    </div>
+    <div class="section">
+      <h2>Skills</h2>
+      <p><span class="highlight">Languages:</span> Python, C++, C#, Java, Lua</p>
+      <p><span class="highlight">Frameworks:</span> PyTorch, TensorFlow, Scikit-learn, OpenCV</p>
+      <p><span class="highlight">Domains:</span> Machine Learning, Deep Learning, NLP, Computer Vision</p>
+      <p><span class="highlight">Tools:</span> Git, Linux, Docker, VS Code</p>
+    </div>
+    <div class="section">
+      <h2>Achievements</h2>
+      <p>Top 5 Finalist, National AI Hackathon 2024</p>
+      <p>Built 10+ production-ready AI and ML systems</p>
+      <p>Contributor, Open Source ML Libraries</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="filename">resume.js</div>
+    <div class="code">
+      <pre><span class="comment">// Introduction</span>
+<span class="keyword">const</span> introduction <span class="type">=</span> <span class="string">"Hello! I’m a computer scientist focused on AI, ML, and software engineering. I build intelligent systems that solve complex problems and deliver measurable results. My work centers on neural networks, data pipelines, and scalable production systems that improve efficiency and decision-making.
+
+Since I was 12, I’ve been fascinated by how code shapes the world. That curiosity grew into a purpose—to develop technology that creates real impact. I value precision, speed, and reliability in every system I design. My goal is to use AI and data-driven solutions to improve lives, push innovation, and contribute to projects that matter."</span>;
+
+<span class="comment">// Experience</span>
+<span class="keyword">const</span> experience <span class="type">=</span> [
+  {
+    title: <span class="string">"Machine Learning Engineer Intern"</span>,
+    company: <span class="string">"Google Research Philippines"</span>,
+    year: <span class="string">"2025"</span>,
+    impact: [
+      <span class="string">"Optimized large-scale vision models, improving inference speed by 35%."</span>,
+      <span class="string">"Engineered ML pipelines using TensorFlow Extended and Kubernetes clusters."</span>,
+      <span class="string">"Collaborated with senior AI researchers to test transformer architectures for generative tasks."</span>
+    ]
+  },
+  {
+    title: <span class="string">"Freelance ML Developer"</span>,
+    company: <span class="string">"Self-employed"</span>,
+    year: <span class="string">"2023–2025"</span>,
+    impact: [
+      <span class="string">"Delivered AI-driven automation tools to small businesses with measurable efficiency gains."</span>,
+      <span class="string">"Integrated GPT-based chat and recommendation systems into client products."</span>
+    ]
+  }
+];
+
+<span class="comment">// Projects</span>
+<span class="keyword">const</span> projects <span class="type">=</span> [
+  {
+    name: <span class="string">"ArdentMind Chess Engine"</span>,
+    description: <span class="string">"Custom chess engine written in C++ using alpha-beta pruning and neural evaluation. Includes opening library, endgame tablebases, and live analysis visualization. Competed against Stockfish with strong midgame analysis depth."</span>
+  },
+  {
+    name: <span class="string">"100 Lifetimes"</span>,
+    description: <span class="string">"2D story-driven adventure game exploring memory loops and parallel timelines. Developed in Unity with cinematic sequences and procedural event logic."</span>
+  },
+  {
+    name: <span class="string">"Project Bio"</span>,
+    description: <span class="string">"A 2d top-down PvE game that combines Biology with games."</span>
+  }
+];
+
+<span class="comment">// Education</span>
+<span class="keyword">const</span> education <span class="type">=</span> {
+  degree: <span class="string">"BS in Computer Science"</span>,
+  university: <span class="string">"University of the Philippines Diliman"</span>,
+  expectedGraduation: <span class="string">"2028"</span>,
+  coursework: [<span class="string">"Machine Learning"</span>, <span class="string">"Data Structures"</span>, <span class="string">"Artificial Intelligence"</span>, <span class="string">"Algorithms"</span>, <span class="string">"Operating Systems"</span>]
+};
+
+<span class="comment">// Contact</span>
+<span class="keyword">const</span> contact <span class="type">=</span> <span class="string">"Reach out at raniel@example.com for research collaboration, AI development, or ML consultation."</span>;
+</pre>
+    </div>
+  </div>
+</body>
+</html>
