@@ -73,16 +73,16 @@
       line-height: 1.6;
     }
     .code {
-      padding: 20px;
-      overflow-y: auto;
-      scrollbar-width: none; /* Firefox */
-      -ms-overflow-style: none; /* Internet Explorer and Edge */
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
     }
 
-  /* Chrome, Safari, and newer Edge */
-  .code::-webkit-scrollbar {
-      display: none;
-  }
+/* Chrome, Safari, and newer Edge */
+.code::-webkit-scrollbar {
+  display: none;
+}
     .keyword { color: #c586c0; }
     .type { color: #4ec9b0; }
     .string { color: #ce9178; }
@@ -165,12 +165,30 @@ Since I was 12, I’ve been fascinated by how code shapes the world. That curios
 ];
 
 <span class="comment">// Education</span>
-<span class="keyword">const</span> education <span class="type">=</span> {
-  degree: <span class="string">"BS in Computer Science"</span>,
-  university: <span class="string">"University of the Philippines Diliman"</span>,
-  expectedGraduation: <span class="string">"2028"</span>,
-  coursework: [<span class="string">"Machine Learning"</span>, <span class="string">"Data Structures"</span>, <span class="string">"Artificial Intelligence"</span>, <span class="string">"Algorithms"</span>, <span class="string">"Operating Systems"</span>]
-};
+<span class="keyword">const</span> education <span class="type">=</span> [
+  {
+    level: <span class="string">"Elementary"</span>,
+    school: <span class="string">"Sacred Heart Academy of Sta. Maria (Bulacan), Inc."</span>,
+    years: <span class="string">"2013 – 2019"</span>
+  },
+  {
+    level: <span class="string">"Junior High School"</span>,
+    school: <span class="string">"Sacred Heart Academy of Sta. Maria (Bulacan), Inc."</span>,
+    years: <span class="string">"2019 – 2023"</span>
+  },
+  {
+    level: <span class="string">"Senior High School (STEM Strand)"</span>,
+    school: <span class="string">"Sacred Heart Academy of Sta. Maria (Bulacan), Inc."</span>,
+    years: <span class="string">"2023 – 2025"</span>
+  },
+  {
+    level: <span class="string">"College"</span>,
+    school: <span class="string">"Hogwarts University of Witchcraft and Wizardry"</span>,
+    degree: <span class="string">"BS in Computer Science"</span>,
+    years: <span class="string">"2028 – 2032"</span>
+  }
+];
+
 
 <span class="comment">// Contact</span>
 <span class="keyword">const</span> contact <span class="type">=</span> <span class="string">"Reach out at raniel@example.com for research collaboration, AI development, or ML consultation."</span>;
